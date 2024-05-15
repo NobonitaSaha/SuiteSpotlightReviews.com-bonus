@@ -36,13 +36,9 @@
 		<div class="cookie-overlay show-overlay"></div>
 		<div class="cookie-overlay-2 show-overlay-2"></div>
 		<div class="cookie-popup" id="cookiePopup">
-			
-			<div class="cookie-img">
-				<img src="images/1.png" alt="confirm">
-			</div>
 			<div class="cookie-description">
 				<div class="cookie-text">
-					<h3>Cookie-Richtlinie</h3>
+					<h3><img src="images/1.png" class="cookie-image">  Cookie-Richtlinie</h3>
 					<p>Wir verwenden Cookies, um Inhalte zu personalisieren, Anzeigen anzupassen und zu messen sowie ein besseres Nutzererlebnis zu bieten. Indem Sie auf "Akzeptieren" klicken, stimmen Sie dem zu, wie in unserer Cookie-Richtlinie beschrieben.</p>
 				</div>
 				<div class="cookie-btn">
@@ -59,16 +55,8 @@
 		/* ---------------------------------- 
 			Cookie Popup CSS Start 
 		------------------------------------- */
-
-		.cookie-img {
-			position: relative;
-			left: -100px;
-		}
-
-		.cookie-img > img {
-			width: 300px;
-			height: 100%;
-			border-radius: 12px;
+		img.cookie-image{
+			width: 60px;
 		}
 
 		.cookie-popup {
@@ -87,10 +75,10 @@
 
 		.cookie-popup.show {
 			display: block;
-			max-width: 500px;
+			max-width: 520px;
 			margin: 0 auto;
 			text-align: center;
-			padding: 0px 15px 30px 15px;
+			padding: 20px 20px 30px 20px;
 		}
 
 		.cookie-text > img {
@@ -101,7 +89,7 @@
 			color: #2e2e2e;
 			font-size: 27px;
 			font-weight: bold;
-			margin: 15px 0px 20px 0px;
+			margin: 10px 0px 10px 0px;
     		font-family: 'Roboto Slab';
 		}
 
@@ -120,9 +108,14 @@
 			gap: 20px;
 		}
 
+		button.cookie-accept {
+			display: flex;
+			align-items: center;
+		}
+
 		.cookie-double-btn button {
 			font-size: 16px;
-			padding: 8px 40px;
+			padding: 10px 40px;
 			font-weight: 500;
 			cursor: pointer;
 			user-select: none;
@@ -142,6 +135,16 @@
 		button.cookie-cancel {
 			background: #2e2e2e4b;
 			color: #1a1a1a;
+		}
+
+		button.cookie-cancel:hover{
+			background: #b8a477;
+			color: #ffffff;
+		}
+
+		button.cookie-accept:hover{
+			background: #b8a477;
+			color: #ffffff;
 		}
 
 		.cookie-overlay {
